@@ -1,0 +1,20 @@
+cabal-version: 2.2
+
+name: haskell-template
+version: 0.1.0.0
+
+common common
+  build-depends:
+      base >= 4.12
+  default-language: Haskell2010
+  ghc-options: -Wall
+
+executable haskell-template
+  import: common
+  hs-source-dirs: app
+  main-is: Main.hs
+  build-depends:
+      scotty >= 0.12,
+      bytestring >= 0.10.12.0,
+      text >= 1.2.4.1
+

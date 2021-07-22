@@ -18,3 +18,13 @@ executable haskell-template
       bytestring >= 0.10.12.0,
       text >= 1.2.4.1
 
+test-suite spec
+  import: common
+  type: exitcode-stdio-1.0
+  hs-source-dirs: test
+  main-is: Spec.hs
+  build-depends:
+      hspec >= 2.7,
+      QuickCheck
+  build-tool-depends:
+      hspec-discover:hspec-discover

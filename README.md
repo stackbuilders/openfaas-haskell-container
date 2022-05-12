@@ -4,9 +4,9 @@
 
 - Docker version >= 20.10.7
 
-## Docker Hub
+## GitHub Container Registry
 
-This container is deployed to Docker Hub.
+This container is deployed to GitHub Container Registry.
 
 ### Building the container
 
